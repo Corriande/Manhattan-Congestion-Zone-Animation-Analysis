@@ -28,9 +28,9 @@ Seven sequential Python Jupyter notebooks outline step by steped with detailed c
 
 There are two publicly available datasets which must be used to run these notebooks, both from OpenNYC and detailed in the next section of the README. NYC Traffic Volume Data and Geojson plottable map data.
 
-- 01_Initial_Congestion_Zone_Data_Framing.ipynb
+#### 01_Initial_Congestion_Zone_Data_Framing.ipynb
 
-Refine both traffic data and map data to area of interest and align their naming schemes
+- Refine both traffic data and map data to area of interest and align their naming schemes
 
   
 #### 02_AzureSynapse_czone_missing_dates.ipynb
