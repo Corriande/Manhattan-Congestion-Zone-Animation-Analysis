@@ -33,12 +33,12 @@ There are two publicly available datasets which must be used to run these notebo
 Refine both traffic data and map data to area of interest and align their naming schemes
 
   
-- 02_AzureSynapse_czone_missing_dates.ipynb
+#### 02_AzureSynapse_czone_missing_dates.ipynb
 
-A Microsoft Azure Synapse Analytics Notebook, made to work with Apache pySpark. Distributed computing is used to impute NA for the unrecorded intervals of time per street per datetime in the traffic counts dataset. While this process was useful in my investigation for data density to make the public code more integral, this information is only strictly necessary for imputing missing data, which forms the basis for only one of the three animated maps.
+- A Microsoft Azure Synapse Analytics Notebook, made to work with Apache pySpark. Distributed computing is used to impute NA for the unrecorded intervals of time per street per datetime in the traffic counts dataset. While this process was useful in my investigation for data density to make the public code more integral, this information is only strictly necessary for imputing missing data, which forms the basis for only one of the three animated maps.
 
 
-- 03_Post_Process_Data_Exploration.ipynb
+#### 03_Post_Process_Data_Exploration.ipynb
 
   - Find the distribution of data and missing data
   - Create Descriptive Statistics
@@ -46,23 +46,23 @@ A Microsoft Azure Synapse Analytics Notebook, made to work with Apache pySpark. 
   - Impute Missing Data
 
 
-- 04_Congestion_Map_and_Bargraph_Animation.ipynb
+#### 04_Congestion_Map_and_Bargraph_Animation.ipynb
 
-This python jupyter notebook contains several functions that can be used together to produce a video of a Manhattan Congestion Zone Map, displaying average volume per street per datetime, as well as a corresponding animated bargraph.
+- This python jupyter notebook contains several functions that can be used together to produce a video of a Manhattan Congestion Zone Map, displaying average volume per street per datetime, as well as a corresponding animated bargraph.
 
-- 05_Imputed_Congestion_Map_and_Bargraph_Animation.ipynb
+#### 05_Imputed_Congestion_Map_and_Bargraph_Animation.ipynb
 
-This notebook is the same as the previous but using the imputed_congestion.csv dataset
-
-
-- 06_Animate_WktGeom_Map.ipynb
-
-Maps the WktGeom data included in the original Automated Traffic Counts Dataset from OpenNYC, which indicates with coordinates the location at which data was recorded. When Plotted these coordinates create a circular marker but not a map. The maps produced by this notebook on the other hand are a much closer representation of the dataset, and at times comes close to simulating the elastic nature of traffic movement.
+- This notebook is the same as the previous but using the imputed_congestion.csv dataset
 
 
-- 07_Traffic_Routes_Branch_Analysis.ipynb
+#### 06_Animate_WktGeom_Map.ipynb
 
-Mappable Branch analysis system:  Identifies the possible next streets one could take from a given street. The analysis starts from a chosen source street, from which traffic enters the congestion releif zone. The average volume of the source street at the selected hour is the basis for the estimate. With each branch added to the analysis, an estimate is made for how much traffic volume is passed from the source street at the selected hour to each street of the branch.
+- Maps the WktGeom data included in the original Automated Traffic Counts Dataset from OpenNYC, which indicates with coordinates the location at which data was recorded. When Plotted these coordinates create a circular marker but not a map. The maps produced by this notebook on the other hand are a much closer representation of the dataset, and at times comes close to simulating the elastic nature of traffic movement.
+
+
+#### 07_Traffic_Routes_Branch_Analysis.ipynb
+
+- Mappable Branch analysis system:  Identifies the possible next streets one could take from a given street. The analysis starts from a chosen source street, from which traffic enters the congestion releif zone. The average volume of the source street at the selected hour is the basis for the estimate. With each branch added to the analysis, an estimate is made for how much traffic volume is passed from the source street at the selected hour to each street of the branch.
 
 
 Again, if you'd like access to datasets, map images, or map videos, please feel free to reach out on Linkedin (address at top of page).
