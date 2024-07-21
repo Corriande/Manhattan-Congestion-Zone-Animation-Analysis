@@ -15,11 +15,11 @@ Manhattan -- Traffic Congestion Zone -- Animated Map and Charts-- BranchAnalysis
 
 - Congestion per data recording node per datetime (Congestion color coded marker on map indicating recording location)
 
-### Traffic routes branch analysis estimation and mapping system
-
 In light of the plan for the Manhattan Congestion Relief Zone, which was originally scheduled to go into effect in June of 2024 (but was cancelled on the last day by the governor of New York), this study seeks to visualize New York City traffic data into a series of animated maps with corresponding bargraphs, which illustrate congestion (a normalized measure of street mobility, congestion = current street volume / max street volume) and total volume respectively. These maps summarize the data of three months of NYC traffic volume (Octobers of 2016 - 2019) in an intuitive manner so traffic and data recording patterns are easily observed.
 
-As well, in order to provide actionable insights to buinesses and institutions anticipating this policy by wondering which streets will should expect to see gains in mobility (and thus strategic value), I created a branch analysis method for the dataset and a means to map it. The branch analysis starts from a selected street and a selected hour. Using the average traffic volume from that street and hour, it estimates the distribution of vehicles to each next street the vehicle could take. This process can be repeated for as many branches as desired, estimating the number of vehicles from the originally selected street and hour distributed to each subsequent branch, assuming a driver will not backtrack. 
+### Traffic routes branch analysis estimation and mapping system
+
+In order to provide actionable insights to buinesses and institutions anticipating this policy by wondering which streets will should expect to see gains in mobility (and thus strategic value), I created a branch analysis method for the dataset and a means to map it. The branch analysis starts from a selected street and a selected hour. Using the average traffic volume from that street and hour, it estimates the distribution of vehicles to each next street the vehicle could take. This process can be repeated for as many branches as desired, estimating the number of vehicles from the originally selected street and hour distributed to each subsequent branch, assuming a driver will not backtrack. 
 
 ## In this repository you will find...
 
