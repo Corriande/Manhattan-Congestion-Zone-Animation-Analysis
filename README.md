@@ -29,18 +29,22 @@ Seven sequential Python Jupyter notebooks outline step by steped with detailed c
 There are two publicly available datasets which must be used to run these notebooks, both from OpenNYC and detailed in the next section of the README. NYC Traffic Volume Data and Geojson plottable map data.
 
 - 01_Initial_Congestion_Zone_Data_Framing.ipynb
+
 Refine both traffic data and map data to area of interest and align their naming schemes
   
 - 02_AzureSynapse_czone_missing_dates.ipynb
+
 A Microsoft Azure Synapse Analytics Notebook, made to work with Apache pySpark. Distributed computing is used to impute NA for the unrecorded intervals of time per street per datetime in the traffic counts dataset. While this process was useful in my investigation for data density to make the public code more integral, this information is only strictly necessary for imputing missing data, which forms the basis for only one of the three animated maps.
 
 - 03_Post_Process_Data_Exploration.ipynb
+
   - Find the distribution of data and missing data
   - Create Descriptive Statistics
   - Explore Mapping Methods
   - Impute Missing Data
 
 - 04_Congestion_Map_and_Bargraph_Animation.ipynb
+
 This python jupyter notebook contains several functions that can be used together to produce a video of a Manhattan Congestion Zone Map, displaying average volume per street per datetime.
 
 As well, this notebook follows a similar process to create a video of a bargraph which corresponds to the animated congestion map, producing a bar graph, labeled by street, measuring the traffic volume for each datetime frame. The colors of the bars represent congestion with the same colors used in the map.
@@ -52,9 +56,11 @@ This notebook will outline the steps for animating the entire dataset, which is 
 It takes hours to render the whole czone_October dataset, but on my macbook frames are produced almost once per second. 
 
 - 05_Imputed_Congestion_Map_and_Bargraph_Animation.ipynb
+
 This notebook is the same as the previous but using the imputed_congestion.csv dataset
 
 - 06_Animate_WktGeom_Map.ipynb
+
 In previous notebooks for animating maps I colored the streets on the map themselves for clarity while representing traffic data per datetime. However, this method requires aggregation, as there are multiple segements per street per datetime with their own unique rows. As a result, previous maps were a descriptive statistic rather than a form of simulation.
 
 The maps produced by this notebook on the other hand are a much closer representation of the dataset, and at times comes close to simulating the elastic nature of traffic movement.
@@ -62,6 +68,7 @@ The maps produced by this notebook on the other hand are a much closer represent
 It does so by mapping the WktGeom data included in the original Automated Traffic Counts Dataset from OpenNYC, which indicates with coordinates the location at which data was recorded. When Plotted these coordinates create a circular marker but not a map. By combining these markers with the geojson map, I was able to give them context and a use.
 
 - 07_Traffic_Routes_Branch_Analysis.ipynb
+
 Finally, this notebook seeks to establish a method for producing specific predicitions for the impact of the Congestion Relief Zone, identifying the specific streets where one would expect to see increases in mobility as a result of the program, and thus establish actionable buisness insights.
 
 To do so, it uses branch analysis, identifying the possible next streets one could take from a given street. The analysis starts from a chosen source street, from which traffic enters the congestion releif zone. The average volume of the source street at the selected hour is the basis for the estimate. With each branch added to the analysis, an estimate is made for how much traffic volume is passed from the source street at the selected hour to each street of the branch.
