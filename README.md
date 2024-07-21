@@ -35,7 +35,7 @@ There are two publicly available datasets which must be used to run these notebo
   
 #### 02_AzureSynapse_czone_missing_dates.ipynb
 
-- A Microsoft Azure Synapse Analytics Notebook, made to work with Apache pySpark. Distributed computing is used to impute NA for the unrecorded intervals of time per street per datetime in the traffic counts dataset. While this process was useful in my investigation for data density to make the public code more integral, this information is only strictly necessary for imputing missing data, which forms the basis for only one of the three animated maps.
+- A Microsoft Azure Synapse Analytics Notebook, made to work with Apache pySpark. Distributed computing is used to impute NA for the unrecorded intervals of time per street per datetime in the traffic counts dataset. While this process was useful in my investigation for data density to make the public data more integral, this information is only strictly necessary for imputing missing data, which forms the basis for only one of the three animated maps.
 
 
 #### 03_Post_Process_Data_Exploration.ipynb
