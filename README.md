@@ -9,11 +9,11 @@ Manhattan -- Traffic Congestion Zone -- Animated Map and Charts-- BranchAnalysis
 
 ### Three kinds of animated map:
 
-#### Average congestion per street per datetime
+- Average congestion per street per datetime
 
-#### (Imputed Missing Data) Average congestion per street per datetime
+- (Imputed Missing Data) Average congestion per street per datetime
 
-#### Congestion per data recording node per datetime (Congestion color coded marker on map indicating recording location)
+- Congestion per data recording node per datetime (Congestion color coded marker on map indicating recording location)
 
 ### Traffic routes branch analysis estimation and mapping system
 
