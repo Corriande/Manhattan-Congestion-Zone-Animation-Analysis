@@ -24,7 +24,7 @@ In order to provide actionable insights to buinesses and institutions anticipati
 
 ## In this repository you will find...
 
-Seven Jupyter notebooks outline step by steped with detailed comments how to produce three kinds of animated traffic maps, as well as how to perform and graph a branch analysis.
+Seven Python Jupyter notebooks outline step by steped with detailed comments how to produce three kinds of animated traffic maps, as well as how to perform and graph a branch analysis.
 
 The second notebook is a Microsoft Azure Synapse Analytics Notebook, made to work with Apache pySpark. Distributed computing is used to impute NA for the unrecorded intervals of time per street per datetime in the traffic counts dataset. While this process was useful in my investigation for data density to make the public code more useable, this information is only strictly necessary for imputing missing data, which forms the basis for only one of the three animated maps. 
 
