@@ -3,7 +3,11 @@ Manhattan -- Traffic Congestion Zone -- Animated Map and Charts-- BranchAnalysis
 
 # Project by Gabriel del Valle, published July 21 2024
 # NYC DATA SCIENCE ACADEMY
-### For any questions about this project or to request full map videos or datasets, please feel free to reach out on Linkdin: 
+### For any questions about this project or to request full map videos or datasets, please feel free to reach out on Linkedin: 
+
+   www.linkedin.com/in/gabriel-del-valle-147616152
+
+   gabrielxdelvalle@gmail.com
 
 
 ## Full Project Summary:
@@ -16,15 +20,15 @@ Manhattan -- Traffic Congestion Zone -- Animated Map and Charts-- BranchAnalysis
 
 - Congestion per data recording node per datetime (Congestion color coded marker on map indicating recording location)
 
-In light of the plan for the Manhattan Congestion Relief Zone, which was originally scheduled to go into effect in June of 2024 (but was cancelled on the last day by the governor of New York), this study seeks to visualize New York City traffic data into a series of animated maps with corresponding bargraphs, which illustrate congestion (a normalized measure of street mobility, congestion = current street volume / max street volume) and total volume respectively. These maps summarize the data of three months of NYC traffic volume (Octobers of 2016 - 2019) in an intuitive manner so traffic and data recording patterns are easily observed.
+In light of the plan for the Manhattan Congestion Relief Zone, which was originally scheduled to go into effect in June of 2024 (but was canceled on the last day by the governor of New York), this study seeks to visualize New York City traffic data into a series of animated maps with corresponding bargraphs, which illustrate congestion (a normalized measure of street mobility, congestion = current street volume / max street volume) and total volume respectively. These maps summarize the data of three months of NYC traffic volume (Octobers of 2016 - 2019) in an intuitive manner so traffic and data recording patterns are easily observed.
 
 ### Traffic routes branch analysis estimation and mapping system
 
-In order to provide actionable insights to buinesses and institutions anticipating this policy by wondering which streets will should expect to see gains in mobility (and thus strategic value), I created a branch analysis method for the dataset and a means to map it. The branch analysis starts from a selected street and a selected hour. Using the average traffic volume from that street and hour, it estimates the distribution of vehicles to each next street the vehicle could take. This process can be repeated for as many branches as desired, estimating the number of vehicles from the originally selected street and hour distributed to each subsequent branch, assuming a driver will not backtrack. 
+In order to provide actionable insights to businesses and institutions anticipating this policy by wondering which streets should expect to see gains in mobility (and thus strategic value), I created a branch analysis method for the dataset and a means to map it. The branch analysis starts from a selected street and a selected hour. Using the average traffic volume from that street and hour, it estimates the distribution of vehicles to each next street the vehicle could take. This process can be repeated for as many branches as desired, estimating the number of vehicles from the originally selected street and hour distributed to each subsequent branch, assuming a driver will not backtrack. 
 
 ## In this repository you will find...
 
-Seven sequential Python Jupyter notebooks outline step by steped with detailed comments how to produce three kinds of animated traffic maps, as well as how to perform and graph a branch analysis.
+Seven sequential Python Jupyter notebooks outline step by step with detailed comments how to produce three kinds of animated traffic maps, as well as how to perform and graph a branch analysis.
 
 There are two publicly available datasets which must be used to run these notebooks, both from OpenNYC and detailed in the next section of the README. NYC Traffic Volume Data and Geojson plottable map data.
 
@@ -80,7 +84,7 @@ Again, if you'd like access to datasets, map images, or map videos, please feel 
 
 https://data.cityofnewyork.us/Transportation/Automated-Traffic-Volume-Counts/7ym2-wayt/about_data
 
-#### Dates Querried: 2016 to 2019
+#### Dates Queried: 2016 to 2019
 #### Note: Data collection ceased after 2019
 #### Official description:
 
@@ -121,7 +125,7 @@ Previously posted versions of the data are retained to comply with Local Law 106
 
 - 'borocode' : A 1-digit code identifying the borough the feature is located in (Manhattan = 1)
 
-- 'geometry' : polyline (plotable map geometry)
+- 'geometry' : polyline (plottable map geometry)
 
 - 'rw_type' : Street Centerline roadway type.
 
