@@ -5,10 +5,8 @@ Manhattan -- Traffic Congestion Zone -- Animated Map and Charts-- BranchAnalysis
 # NYC DATA SCIENCE ACADEMY
 ### For any questions about this project or to request full map videos or datasets, please feel free to reach out on Linkedin: 
 
-   www.linkedin.com/in/gabriel-del-valle-147616152
-
-   gabrielxdelvalle@gmail.com
-
+   www.linkedin.com/in/gabrielxdelvalle
+   This is the true linkedin link^^
 
 ## Full Project Summary:
 
