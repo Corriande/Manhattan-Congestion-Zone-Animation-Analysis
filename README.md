@@ -63,6 +63,10 @@ There are two publicly available datasets which must be used to run these notebo
 #### 07_Traffic_Routes_Branch_Analysis.ipynb
 
 - Mappable Branch analysis system:  Identifies the possible next streets one could take from a given street. The analysis starts from a chosen source street, from which traffic enters the congestion releif zone. The average volume of the source street at the selected hour is the basis for the estimate. With each branch added to the analysis, an estimate is made for how much traffic volume is passed from the source street at the selected hour to each street of the branch.
+- Create a dataframe which sums the volume passed to each branch from each source street
+- Rank streets by their volume received from source streets to predict which would gain the most mobility of the congestion zone (within limits of the data's integrity)
+- Identify which streets are more integral to draw insights from branch analysis based on whether their number of connections is sufficient to describe the average daily volume of the source street.Rank by number of connections.
+- Graph network connections between source streets and branches
 
 
 Again, if you'd like access to datasets, map images, or map videos, please feel free to reach out on Linkedin (address at top of page).
