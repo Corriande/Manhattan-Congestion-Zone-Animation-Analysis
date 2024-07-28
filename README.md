@@ -1,7 +1,7 @@
 # Manhattan-Congestion-Zone-Animation-Analysis
 Manhattan -- Traffic Congestion Zone -- Animated Map and Charts-- BranchAnalysis -- Python -- NYC Public Data
 
-# Project by Gabriel del Valle, published July 21 2024
+# Project by Gabriel del Valle, published July 28 2024
 # NYC DATA SCIENCE ACADEMY
 ### For any questions about this project or to request full map videos or datasets, please feel free to reach out on Linkedin: 
 
