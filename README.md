@@ -8,6 +8,9 @@ Manhattan -- Traffic Congestion Zone -- Animated Map and Charts-- BranchAnalysis
    www.linkedin.com/in/gabrielxdelvalle
    This is the true linkedin link
 
+   Read the full blogpost!
+   https://nycdatascience.com/blog/student-works/nyc-animated-traffic-maps-and-branch-analysis/
+
 ## Full Project Summary:
 
 ### Three kinds of animated map (each with animated barcharts):
