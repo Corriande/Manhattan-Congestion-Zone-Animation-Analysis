@@ -13,7 +13,8 @@ Manhattan -- Traffic Congestion Zone -- Animated Map and Charts-- BranchAnalysis
 
 ## Full Project Summary:
 
-### Three kinds of animated map (each with animated barcharts):   Updated 10/25/24 with a new kind of animated map Directional Traffic Flow Map (notebooks 08 and 09)
+### Three kinds of animated map (each with animated barcharts):   
+### Updated 10/25/24 with a new kind of animated map Directional Traffic Flow Map (notebooks 08 and 09)
 
 - Average congestion per street per datetime
 
