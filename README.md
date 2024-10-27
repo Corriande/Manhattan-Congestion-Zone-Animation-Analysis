@@ -13,13 +13,15 @@ Manhattan -- Traffic Congestion Zone -- Animated Map and Charts-- BranchAnalysis
 
 ## Full Project Summary:
 
-### Three kinds of animated map (each with animated barcharts):
+### Three kinds of animated map (each with animated barcharts):   Updated 10/25/24 with a new kind of animated map Directional Traffic Flow Map (notebooks 08 and 09)
 
 - Average congestion per street per datetime
 
 - (Imputed Missing Data) Average congestion per street per datetime
 
 - Congestion per data recording node per datetime (Congestion color coded marker on map indicating recording location)
+
+- (NEW 10/25/24) Congestion per data recording node per datetime with markers drawn on streets where volume exchanges are recorded, colored with a grey scale gradient to indicate the direction of traffic flow: Whiter markers approach an intersection that is recorded as the "from street" or "lose street", Blacker markers approach an intersection that is recorded as the "to street" or "gain street". Street markers are only drawn between known intersections that have an established volume exchange relationship.
 
 In light of the plan for the Manhattan Congestion Relief Zone, which was originally scheduled to go into effect in June of 2024 (but was canceled on the last day by the governor of New York), this study seeks to visualize New York City traffic data into a series of animated maps with corresponding bargraphs, which illustrate congestion (a normalized measure of street mobility, congestion = current street volume / max street volume) and total volume respectively. These maps summarize the data of three months of NYC traffic volume (Octobers of 2016 - 2019) in an intuitive manner so traffic and data recording patterns are easily observed.
 
@@ -72,6 +74,18 @@ There are two publicly available datasets which must be used to run these notebo
 - Rank streets by their volume received from source streets to predict which would gain the most mobility of the congestion zone (within limits of the data's integrity)
 - Identify which streets are more integral to draw insights from branch analysis based on whether their number of connections is sufficient to describe the average daily volume of the source street.Rank by number of connections.
 - Graph network connections between source streets and branches
+
+#### 08_Intersections.ipynb
+
+- Identifies geometric intersections in the basemap.geojson dataset and the names of intersecting streets
+- Identifies exchanges of volume between to different streets using the toSt and fromSt columns of the Automated Traffic Counts Dataset
+- Locates these exchanges of volumes on the map, giving them a precise spatial coordinate where previously there was none
+- Creates the sorted_intersection_dates dataset, with information on all intersectional exchanges of volume per datetime, info on both intersecting streets, and an intersection marker to plot this data on the map. This dataset is used in 09_Directional_Volume_Flow_Map
+
+#### 09_Directional_Volume_Flow_Map.ipynb
+
+- Maps the WktGeom data included in the Automated Traffic Counts dataset, as well as portraying the direction of traffic volume exchanges between known intersections (recorded in sorted_intersection_dates) by systemically fitting markers to each street, and coloring the markers between intersections with a grey scale gradient. The gradient becomes darker towards the "gain street" and whiter towards the "lose street" between two intersections that exchange traffic volume.
+
 
 
 Again, if you'd like access to datasets, map images, or map videos, please feel free to reach out on Linkedin (address at top of page).
